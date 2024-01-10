@@ -15,7 +15,7 @@
         echo '<td>',$row['postcode'],$row['address'],'</td>';
         echo '<td>',$row['price'],'</td>';
         echo '</tr>';
-    }
+    } 
     echo '</table>';
     ?>
 <?php require 'footer.php' ?>
