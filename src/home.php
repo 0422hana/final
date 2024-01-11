@@ -5,7 +5,7 @@
     echo '<h1>Cafe_Memory</h1>';
     echo '<p>[カフェ一覧]</p>';
     echo '<table>';
-    echo '<tr><td>SHOP</td> <td>FOOD</td> <td>CATEGORY</td> <td>PRICE　</td> <td>　ADDRESS</td> <td></td></tr>';
+    echo '<tr><td>SHOP</td> <td>FOOD</td> <td>CATEGORY　</td> <td>PRICE　</td> <td>ADDRESS</td> <td></td></tr>';
     
     $pdo = new PDO($connect, USER, PASS);
     $sql = $pdo -> query('select * from Shop inner join Category on Shop.category_id = Category.category_id');
@@ -22,5 +22,6 @@
         echo '</tr>';
     } 
     echo '</table>';
+    echo '<td><button onclick="location.href=`insert.php?shopId=',$shopId,'`">登録</button></td>';
     ?>
 <?php require 'footer.php' ?>
