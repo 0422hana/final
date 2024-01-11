@@ -2,7 +2,7 @@
 <?php require 'header.php' ?>
 
 <?php
-    $odo = new PDO($connect, USER, PASS);
+    $pdo = new PDO($connect, USER, PASS);
     $sql = $pdo -> prepare('delete from Shop where shop_id = ?');
     $sql -> execute([$_GET['shopId']]);
     echo '<p>削除しました</p>';
