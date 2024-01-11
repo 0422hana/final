@@ -12,8 +12,11 @@
     foreach($sql as $row){
         echo '<tr>';
         echo '<td>',$row['shop_name'],'</td>';
+        echo '<td>',$row['food_name'],'</td>';
         echo '<td>',$row['postcode'],$row['address'],'</td>';
         echo '<td>',$row['price'],'</td>';
+        //echo '<td><input type="button" name="delete" formaction="delete.php>削除</td>';
+        //echo '<td><input type="button" name="delete">削除</td>';
         echo '</tr>';
     } 
     echo '</table>';
