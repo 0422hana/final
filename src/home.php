@@ -8,12 +8,13 @@
     echo '<tr><td>SHOP</td> <td>FOOD</td> <td>PRICE</td> <td>ADDRESS</td> <td></td></tr>';
     
     $pdo = new PDO($connect, USER, PASS);
-    $sql = $pdo -> query('select * from Shop');
+    $sql = $pdo -> query('select * from Shop inner join Category on Shop.category_id = Category.category_id');
     foreach($sql as $row){
         $shopId = $row['shop_id'];
         echo '<tr>';
         echo '<td>',$row['shop_name'],'</td>';
         echo '<td>',$row['food_name'],'</td>';
+        echo '<td>',$row['category_name'],'</td>';
         echo '<td>',$row['price'],'</td>';
         echo '<td>',$row['postcode'],'　　',$row['address'],'</td>';
         echo '<td><button onclick="location.href=`update.php?shopId=',$shopId,'`">更新</button></td>';
