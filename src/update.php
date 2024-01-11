@@ -14,6 +14,7 @@
     // echo '住所<input type="text" id="address">';
 
     echo '</form>';
+    echo '<span class="p-country-name" style="display:none;">Japan</span>';
     echo '<form class="h-adr">';
     echo '〒<input type="text" class="p-postal-code" size="8" maxlength="8"><br>';
     echo '<input type="text" class="p-region p-locality p-street-address p-extended-address" />';
