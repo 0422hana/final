@@ -16,7 +16,7 @@
         echo '<td>',$row['food_name'],'</td>';
         echo '<td>',$row['price'],'</td>';
         echo '<td>',$row['postcode'],'　　',$row['address'],'</td>';
-        echo '<td><button onclick="location.href=`delete.php?cosmeId=',$shopId,'`">削除</button></td>';
+        echo '<td><button onclick="location.href=`delete.php?shopId=',$shopId,'`">削除</button></td>';
         echo '</tr>';
     } 
     echo '</table>';
