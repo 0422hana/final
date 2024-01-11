@@ -9,9 +9,9 @@
     echo '<input type="text" name="shopName">';
     echo '<input type="text" name="foodName">';
     echo '<input type="number" name="price">';
-    echo '郵便番号<input type="text" id="zipCode">'
-    echo '<input type="button" id="submit" value="住所検索">';
-    echo '住所<input type="text" id="address">';
+    // echo '郵便番号<input type="text" id="zipCode">'
+    // echo '<input type="button" id="submit" value="住所検索">';
+    // echo '住所<input type="text" id="address">';
 
     echo '</form>';
     echo '<form class="h-adr">';
