@@ -22,6 +22,7 @@
         echo '</tr>';
     } 
     echo '</table>';
+    echo '<a href="insert.php">登録</a>';
     echo '<td><button onclick="insert.php">登録</button></td>';
     ?>
 <?php require 'footer.php' ?>
