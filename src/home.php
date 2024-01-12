@@ -4,7 +4,7 @@
 <?php
     echo '<h1>Cafe_Memory</h1>';
     echo '<div class="cafe"><p>[カフェ一覧]</p></div>';
-    echo '<table>';
+    echo '<table aligin="center">';
     echo '<tr><td>SHOP</td> <td>FOOD</td> <td>CATEGORY　</td> <td>PRICE　</td> <td>ADDRESS</td> <td></td></tr>';
     
     $pdo = new PDO($connect, USER, PASS);
