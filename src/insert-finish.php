@@ -6,6 +6,7 @@
     $code2 = substr($code, 3);
     echo $code2;
     $zipcode = $code1."-".$code2;
+    echo $zipcode;
 
     $pdo = new PDO($connect, USER, PASS);
     $sql = $pdo -> prepare('insert into Shop values(null, ?, ?, ?, ?, ?, ?)');
