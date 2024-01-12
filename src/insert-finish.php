@@ -2,10 +2,10 @@
 <?php require 'header.php' ?>
 <?php
     $code = $_POST['zipCode'];
-    $code = substr($code, 0, 3);
+    $code1 = substr($code, 0, 3);
     $code2 = substr($code, 3);
     echo $code2;
-    $zipcode = $code."-".$code2;
+    $zipcode = $code1."-".$code2;
 
     $pdo = new PDO($connect, USER, PASS);
     $sql = $pdo -> prepare('insert into Shop values(null, ?, ?, ?, ?, ?, ?)');
