@@ -3,7 +3,7 @@
     
 <?php
     echo '<h1>Cafe_Memory</h1>';
-    echo '<p>[カフェ一覧]</p>';
+    echo '<div class="cafe"><p>[カフェ一覧]</p></div>';
     echo '<table>';
     echo '<tr><td>SHOP</td> <td>FOOD</td> <td>CATEGORY　</td> <td>PRICE　</td> <td>ADDRESS</td> <td></td></tr>';
     
