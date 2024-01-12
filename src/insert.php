@@ -1,5 +1,7 @@
 <?php require 'db_connect.php' ?>
 <?php require 'header.php' ?>
+
+<h2>お店登録</h2>
 <?php
     // $pdo = new PDO($connect, USER, PASS);
     // $sql = $pdo -> prepare('delete from Shop where shop_id = ?');
