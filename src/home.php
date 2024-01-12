@@ -11,12 +11,18 @@
     $sql = $pdo -> query('select * from Shop inner join Category on Shop.category_id = Category.category_id');
     foreach($sql as $row){
         $shopId = $row['shop_id'];
+
+        $code = $row['postcode'];
+        $code1 = substr($code, 0, 3);
+        $code2 = substr($code, 3);
+        $zipcode = $code1."-".$code2;
+
         echo '<tr>';
         echo '<td>',$row['shop_name'],'</td>　';
         echo '<td>',$row['food_name'],'</td>　';
         echo '<td>',$row['category_name'],'</td>　';
         echo '<td>￥',$row['price'],'</td>　';
-        echo '<td>',$row['postcode'],'<br>',$row['address'],'</td>　';
+        echo '<td>',$zipcode,'<br>',$row['address'],'</td>　';
         echo '<td><button onclick="location.href=`update.php?shopId=',$shopId,'`">更新</button></td>';
         echo '<td><button onclick="location.href=`delete.php?shopId=',$shopId,'`">削除</button></td>';
         echo '</tr>';
