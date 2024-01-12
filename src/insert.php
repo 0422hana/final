@@ -13,7 +13,7 @@
     echo    '<option value="3">ディナー</option>';
     echo '</select><br>';
     echo 'PRICE：<input type="number" name="price"><br>';
-    echo 'ADDRESS：'
+    echo 'ADDRESS：';
     echo '<script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>';
     echo '<span class="p-country-name" style="display:none;">Japan</span>';
     echo '〒<input type="text" class="p-postal-code" size="8" maxlength="8" name="zipCode">　';
