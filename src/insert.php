@@ -7,7 +7,7 @@
     echo '<form action="insert-finish.php" method="post" class="h-adr">';
     echo 'SHOP NAME<input type="text" name="shopName"><br>';
     echo 'FOOD NAME<input type="text" name="foodName"><br>';
-    echo '<select name="category">';
+    echo '<select name="category"><br>';
     echo    '<option value="1">スイーツ</option>';
     echo    '<option value="2">ランチ</option>';
     echo    '<option value="3">ディナー</option>';

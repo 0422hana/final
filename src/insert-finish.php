@@ -2,7 +2,7 @@
 <?php require 'header.php' ?>
 <?php
     $pdo = new PDO($connect, USER, PASS);
-    $sql = $pdo -> prepare('insert into Shop null, ?, ?, ?, ?, ?, ?');
+    $sql = $pdo -> prepare('insert into Shop values(null, ?, ?, ?, ?, ?, ?)');
     $sql -> execute([$_POST['shopName'], $_POST['foodName'], $_POST['category'], $_POST['price'], $_POST['zipCode'], $_POST['address']]);
 ?>
 <p>登録しました</p>
