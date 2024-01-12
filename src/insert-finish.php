@@ -4,6 +4,7 @@
     $code = $_POST['zipCode'];
     $code = substr($code, 0, 3);
     $code2 = substr($code, 3);
+    echo $code2;
     $zipcode = $code."-".$code2;
 
     $pdo = new PDO($connect, USER, PASS);
