@@ -5,7 +5,7 @@
     echo '<h1>Cafe_Memory</h1>';
     echo '<div class="cafe"><p>[カフェ一覧]</p></div>';
     echo '<table border="1">';
-    echo '<tr><td width="230" height="30">SHOP</td> <td width="230" height="30">FOOD</td> <td width="100" height="30">CATEGORY</td> <td width="100" height="30">PRICE</td> <td width="290" height="30">ADDRESS</td> <td width="60" height="30"></td><td width="60" height="30"></td></tr>';
+    echo '<tr><td width="230" height="30">SHOP</td> <td width="230" height="30">FOOD</td> <td width="100" height="30">CATEGORY</td> <td width="100" height="30">PRICE</td> <td width="350" height="30">ADDRESS</td> <td width="60" height="30"></td><td width="60" height="30"></td></tr>';
     
     $pdo = new PDO($connect, USER, PASS);
     $sql = $pdo -> query('select * from Shop inner join Category on Shop.category_id = Category.category_id');
