@@ -7,6 +7,7 @@ $image = $_FILES['image'];
             $destination = '../image/'.$filename;
             if(move_uploaded_file($image['tmp_name'], $destination)){
                 echo 'ファイルが正常にアップロードされました。';
+                echo $destination;
                 echo '<img src="'.$destination.'" alt="アップロードされた画像">';
             }else{
                 echo 'ファイルのアップロードに失敗しました。';
