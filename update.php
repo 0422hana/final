@@ -3,7 +3,7 @@
 
 <h2>お店削除</h2>
 <?php
-    echo '<form action="insert-finish.php" method="post" class="h-adr">';
+    echo '<form action="update-finish.php" method="post" class="h-adr">';
     echo 'SHOP NAME：<input type="text" name="shopName"><br>';
     echo 'FOOD NAME：<input type="text" name="foodName"><br>';
     echo 'FOOD CATEGORY：<select name="category">';
